@@ -1,7 +1,19 @@
 # Lab2.1 — Prompt và hợp đồng mã nháp
 
+File này lưu prompt đã thực hiện. Các đường dẫn trong khối prompt giữ nguyên theo thời
+điểm chạy; khi tái lập sau khi tổ chức lại repo, dùng bảng context hiện tại dưới đây.
+
+| Context | Đường dẫn hiện tại tính từ repo root |
+| --- | --- |
+| Coding rules | `docs/rules/coding-rules.md` |
+| API rules | `docs/rules/api-rules.md` |
+| Security rules | `docs/rules/security-rules.md` |
+| Hợp đồng và prompt của bài này | `labs/lab-2.1-context-engineering/prompts/draft-generation.md` |
+
+Mã nháp và lệnh kiểm tra vẫn dùng vị trí được chỉ dẫn bên dưới.
+
 Chọn **ví dụ 2** của phần chính: hoàn thiện `sum(String, String)` trong
-[`scratch/ScratchHandler.java`](../scratch/ScratchHandler.java).
+[`scratch/ScratchHandler.java`](../../../scratch/ScratchHandler.java).
 Ảnh minh họa trong đề cộng hai số lớn dạng chuỗi và từ chối null/ký tự không phải chữ số.
 Không thực hiện phụ lục hoặc triển khai Work Order API trong bản nháp này.
 
@@ -58,9 +70,9 @@ Theo yêu cầu trực tiếp của người làm lab, Codex thực hiện sinh 
 trong repo, thay vai trò công cụ sinh mã của Copilot Chat. Không cần kết nối Copilot.
 Các file kết quả không phải transcript của một phiên Copilot.
 
-- Mã sinh: [ScratchHandler.java](../scratch/ScratchHandler.java).
-- Kiểm chứng: [ScratchHandlerTest.java](../tests/unit/ScratchHandlerTest.java).
-- Kết quả chạy và đánh giá: [lab21-scorecard.md](lab21-scorecard.md).
+- Mã sinh: [ScratchHandler.java](../../../scratch/ScratchHandler.java).
+- Kiểm chứng: [ScratchHandlerTest.java](../../../tests/unit/ScratchHandlerTest.java).
+- Kết quả chạy và đánh giá: [compliance-scorecard.md](../results/compliance-scorecard.md).
 
 ## Chạy kiểm chứng
 

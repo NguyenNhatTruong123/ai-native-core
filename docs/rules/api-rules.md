@@ -1,8 +1,9 @@
 # API Rules
 
 Áp dụng khi viết REST API. Hợp đồng Work Order hiện nằm trong
-[work-order-decomposition.md](work-order-decomposition.md), mục 3–7.
-`api-spec.md` và `domain-model.md` hiện chưa có nội dung; không dùng chúng để suy đoán schema.
+[work-order-decomposition.md](../specs/work-order-decomposition.md), mục 3–7.
+[api-spec.md](../specs/api-spec.md) và [domain-model.md](../specs/domain-model.md)
+hiện chưa có nội dung; không dùng chúng để suy đoán schema.
 
 ## A01 — Bám đặc tả
 

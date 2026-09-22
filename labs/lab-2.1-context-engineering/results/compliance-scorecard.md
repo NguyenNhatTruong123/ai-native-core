@@ -1,8 +1,8 @@
 # Lab2.1 — Scorecard đánh giá mã nháp
 
 **Kết quả: 16/16 tiêu chí áp dụng đạt Pass; 552/552 kiểm tra thực thi đạt.**
-Đánh giá ngày 22/09/2026 cho [ScratchHandler.java](../scratch/ScratchHandler.java),
-theo [prompt đã dùng](lab21-draft-prompt.md) và bộ quy tắc trong `docs/`.
+Đánh giá ngày 22/09/2026 cho [ScratchHandler.java](../../../scratch/ScratchHandler.java),
+theo [prompt đã dùng](../prompts/draft-generation.md) và bộ quy tắc trong `docs/rules/`.
 Bước 3 được Codex thực hiện trực tiếp theo yêu cầu người dùng.
 
 ## Bảng đánh giá
@@ -58,8 +58,8 @@ PASS: 552 checks (contract, validation, BigInteger reference).
 Exit code `0`; biên dịch không có warning/error. Máy chạy dùng JDK `21.0.12.1`,
 biên dịch theo target Java 17. Chưa chạy bằng một JVM 17 riêng.
 552 kiểm tra gồm 14 ca hợp lệ/biên, 38 ca input sai và 500 đối chiếu độc lập.
-Xem [bản ghi kết quả](lab21-test-results.txt) và
-[mã kiểm tra](../tests/unit/ScratchHandlerTest.java).
+Xem [bản ghi kết quả](test-results.txt) và
+[mã kiểm tra](../../../tests/unit/ScratchHandlerTest.java).
 
 ## Đối chiếu Done Criteria
 

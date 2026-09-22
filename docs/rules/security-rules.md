@@ -16,7 +16,7 @@ không có secret dự phòng trong source. Dùng placeholder cho ví dụ cấu
 
 Luôn kiểm tra null, độ dài, kiểu, định dạng và tập giá trị được cho phép trước khi xử lý.
 Không tin dữ liệu từ client hoặc output AI. Dữ liệu sai phải bị từ chối rõ ràng.
-Với scratch `sum`, hợp đồng đầu vào nằm trong [lab21-draft-prompt.md](lab21-draft-prompt.md).
+Với scratch `sum`, hợp đồng đầu vào nằm trong [draft-generation.md](../../labs/lab-2.1-context-engineering/prompts/draft-generation.md).
 
 - **Đúng:** chỉ chấp nhận ký tự ASCII `0`–`9` cho phép cộng số nguyên không âm.
 - **Sai:** xóa ký tự không hợp lệ, trim hoặc đổi null thành 0 để tiếp tục tính.
@@ -59,4 +59,4 @@ Kiểm tra customer tồn tại/active ở server, không dựa vào một cờ 
 Không đưa dữ liệu production hoặc secret vào context AI; `.copilotignore` không thay thế
 việc chủ động loại dữ liệu nhạy cảm. Review dependency, mã nháp và thông báo lỗi trước khi dùng.
 Chạy test dữ liệu sai/biên; không đánh dấu đã secret-scan, đã review bởi người hoặc đã dùng
-một công cụ nếu chưa có bằng chứng. Tuân theo [CONTRIBUTING.md](../CONTRIBUTING.md).
+một công cụ nếu chưa có bằng chứng. Tuân theo [CONTRIBUTING.md](../../CONTRIBUTING.md).

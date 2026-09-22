@@ -1,0 +1,42 @@
+Lab2.2 verification record
+Date: 2026-09-22
+Generator and reviewer: Codex, as requested
+
+Method: DOCX prompt comparison, static source/evidence checks, Markdown artifact audit.
+This is artifact verification, not execution of the vulnerable Java fixture or API tests.
+
+PASS: Original prompt P01
+  DOCX wording/order retained; placeholders resolved; whitespace normalized for comparison
+PASS: Original prompt P02
+  DOCX wording/order retained; placeholders resolved; whitespace normalized for comparison
+PASS: Original prompt P03
+  DOCX wording/order retained; placeholders resolved; whitespace normalized for comparison
+PASS: Custom Instructions
+  Workspace role and core rules match P01
+PASS: Main-section raw BR
+  Business input taken from main step 2, not appendix answer
+PASS: DC01 analysis content
+  4 entities/actors; 12 open questions; 9 UI/Data/API rows
+PASS: DC02 review comments
+  14 distinct comments, exceeds minimum 8
+PASS: Review group ordering
+  Category counts in requested order: [3, 4, 3, 2, 2]
+PASS: Actionable comment detail
+  All 14 comments include location, impact, fix, and verification
+PASS: Review evidence anchors
+  55 source lines; 17 line anchors verified; SHA256 220590b644e6383f62d776d69efff6d02a91fc6b364060d6b826625bbf8eedb4
+PASS: Safe correction structure
+  Proposed structure and test plan map all RC01-RC14
+PASS: Official Done Criteria traceability
+  Both official criteria copied verbatim and linked to evidence
+PASS: Fixture containment
+  Deliberately unsafe fixture remains outside application source; not executed
+PASS: Local evidence links
+  All local Markdown targets resolve, including the report produced by this run
+PASS: Markdown integrity
+  UTF-8 readable, balanced code fences, no trailing whitespace
+
+Result: 15/15 checks passed.
+Official Done Criteria: 2/2 covered by saved artifacts.
+
+Technical findings were reviewed from the source; structural checks do not prove runtime security.

@@ -135,7 +135,7 @@ Ghi rõ giả định/giới hạn của bản nháp trong prompt; không giả 
 
 Biên dịch không warning và kiểm tra happy path, boundary, dữ liệu sai.
 Ghi bằng chứng trong Scorecard; phân biệt review mã, test chạy thật và kiểm tra chưa thực hiện.
-Code AI vẫn cần người review theo [CONTRIBUTING.md](../CONTRIBUTING.md).
+Code AI vẫn cần người review theo [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
 - **Đúng:** đối chiếu phép cộng chuỗi với `BigInteger` trong test, ghi kết quả chạy thực tế.
 - **Sai:** đánh dấu Pass vì AI nói code đúng hoặc nhận đã chạy một công cụ khi chưa chạy.

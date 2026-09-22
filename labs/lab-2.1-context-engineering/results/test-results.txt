@@ -32,4 +32,4 @@ Additional checks performed:
 
 Scope:
 This record verifies the scratch sum implementation, not a Work Order HTTP server.
-Review criteria and non-applicable API checks are documented in lab21-scorecard.md.
+Review criteria and non-applicable API checks are documented in compliance-scorecard.md.

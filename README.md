@@ -3,6 +3,19 @@
 ## 1. Project Purpose
 This repository serves as the baseline foundation for the Core Service API. It is architected under the AI-Native SDLC paradigm, utilizing GitHub Copilot for spec-driven generation and gated quality verification.
 
+### Repository layout
+
+| Location | Purpose |
+| --- | --- |
+| [docs/rules/](docs/README.md) | Shared coding, API, and security rules. |
+| [docs/specs/](docs/README.md) | Technical specifications and domain/API specification stubs. |
+| [labs/](labs/README.md) | Lab prompts, analysis, reviews, completion reports, and verification results, grouped by lab. |
+| `.github/` | Tool instructions and contribution templates. |
+| `scratch/`, `tests/`, `scripts/` | Exercise code, executable tests, and runner scripts. |
+
+The [document index](docs/README.md) and [lab index](labs/README.md) explain each file's
+purpose and its placement. Lab outputs are kept separate from the shared specifications.
+
 ## 2. Technology Stack & Prerequisites
 - **Language / Runtime:** Python 3.11+ / Node.js 20+ / .NET 8 / Java 21 / C++20 (Select your project primary stack)
 - **Framework:** REST API (FastAPI / Express / ASP.NET Core / Spring Boot)
@@ -28,13 +41,13 @@ python src/main.py               # or npm start / dotnet run
 
 ## 5. Lab2.1 — Context Engineering
 
-The Rules Pack contains [coding rules](docs/coding-rules.md),
-[API rules](docs/api-rules.md), and [security rules](docs/security-rules.md).
+The Rules Pack contains [coding rules](docs/rules/coding-rules.md),
+[API rules](docs/rules/api-rules.md), and [security rules](docs/rules/security-rules.md).
 The draft follows the lab's second example: `sum(String, String)` in
 [ScratchHandler.java](scratch/ScratchHandler.java).
 
-See the [context prompt and draft contract](docs/lab21-draft-prompt.md) and the
-[compliance scorecard](docs/lab21-scorecard.md). As requested, Codex performed
+See the [context prompt and draft contract](labs/lab-2.1-context-engineering/prompts/draft-generation.md) and the
+[compliance scorecard](labs/lab-2.1-context-engineering/results/compliance-scorecard.md). As requested, Codex performed
 the draft generation directly and saved the results in this repository.
 
 Run the draft checks from the repository root with PowerShell and JDK 17+:
@@ -44,3 +57,17 @@ Run the draft checks from the repository root with PowerShell and JDK 17+:
 ```
 
 No Maven, Spring server, or database is needed for this scratch exercise.
+
+## 6. Lab2.2 — Context and Business Requirements Analysis
+
+[Workspace instructions](.github/copilot-instructions.md) apply the lab's role and core rules.
+The [original prompts with their inputs](labs/lab-2.2-business-analysis/prompts/executed-prompts.md) were executed directly by Codex.
+
+- [Business analysis](labs/lab-2.2-business-analysis/analysis/work-order-business-analysis.md): entities, open questions, and UI/Data/API decomposition.
+- [Code review](labs/lab-2.2-business-analysis/reviews/security-code-review.md): 14 findings on the deliberately vulnerable
+  [training fixture](scratch/lab22/unsafe/WorkOrderController.java), in the requested priority order.
+- [Proposed safe structure](labs/lab-2.2-business-analysis/reviews/proposed-safe-design.md): responsibilities, parameter binding, and test plan.
+- [Done Criteria coverage](labs/lab-2.2-business-analysis/results/done-criteria.md): evidence for both official criteria and each step.
+
+The vulnerable fixture is for static review only and is outside application source.
+This lab does not build or deploy a Spring application.

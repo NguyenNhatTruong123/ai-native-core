@@ -1,12 +1,12 @@
 ## 1. Traceability
 - **Issue Linked:** Closes #WO-201
-- **Spec Path:** `docs/work-order-decomposition.md`
+- **Spec Path:** `docs/specs/work-order-decomposition.md`
 
 ## 2. AI Usage Disclosure & Provenance
 - [ ] **AI Tools Used:** GitHub Copilot Chat / Inline Autocomplete
-- [ ] **Prompts / Context Provided:** Listed spec file `docs/work-order-decomposition.md` as context.
+- [ ] **Prompts / Context Provided:** Listed spec file `docs/specs/work-order-decomposition.md` as context.
 - [ ] **Modified Files Summary:**
-  - Generated files: `docs/work-order-decomposition.md`
+  - Generated files: `docs/specs/work-order-decomposition.md`
   - Hand-written files: `.github/copilot-ignore`
 
 ## 3. Verification & Evidence
