@@ -25,3 +25,22 @@ python src/main.py               # or npm start / dotnet run
 ## 4. Repository Governance
 - All feature additions must originate from an approved GitHub Issue.
 - AI-generated code must strictly pass unit tests and human peer review before merging.
+
+## 5. Lab2.1 — Context Engineering
+
+The Rules Pack contains [coding rules](docs/coding-rules.md),
+[API rules](docs/api-rules.md), and [security rules](docs/security-rules.md).
+The draft follows the lab's second example: `sum(String, String)` in
+[ScratchHandler.java](scratch/ScratchHandler.java).
+
+See the [context prompt and draft contract](docs/lab21-draft-prompt.md) and the
+[compliance scorecard](docs/lab21-scorecard.md). As requested, Codex performed
+the draft generation directly and saved the results in this repository.
+
+Run the draft checks from the repository root with PowerShell and JDK 17+:
+
+```powershell
+.\scripts\test-lab21.ps1
+```
+
+No Maven, Spring server, or database is needed for this scratch exercise.

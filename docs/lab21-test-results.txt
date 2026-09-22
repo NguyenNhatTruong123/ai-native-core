@@ -1,0 +1,35 @@
+Lab2.1 verification record
+Date: 2026-09-22
+Working directory: D:\jPackages\eclipse-workspace\repo
+Generator: Codex, as requested by the user for step 3
+
+Runtime observed:
+java version "21.0.12.1" 2026-08-18 LTS
+javac 21.0.12.1
+
+Command executed:
+.\scripts\test-lab21.ps1
+
+Compiler options used by the script:
+--release 17 -encoding UTF-8 -Xlint:all -Werror
+
+Captured test output:
+PASS: 552 checks (contract, validation, BigInteger reference).
+
+Process exit code: 0
+Compiler diagnostics: none
+
+Check breakdown:
+- 14 explicit valid-input and boundary checks
+- 38 invalid-input checks: 19 inputs tested in each operand position
+- 500 independent reference checks: 250 seeded pairs and their reversed order
+
+Additional checks performed:
+- Java files: no tabs, no trailing whitespace, no lines over 100 characters
+- git diff --check: no whitespace errors in tracked changes
+- git check-ignore: both generated class files match the existing bin/ rule
+- .gitignore was converted from UTF-16 to UTF-8 so Git can read its existing rules
+
+Scope:
+This record verifies the scratch sum implementation, not a Work Order HTTP server.
+Review criteria and non-applicable API checks are documented in lab21-scorecard.md.
